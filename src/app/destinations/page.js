@@ -4,6 +4,8 @@ import { useState, useMemo } from "react";
 import { mockDestinations } from "@/data/mockDestinations";
 import FilterControls from "@/components/destinations/FilterControls";
 import DestinationCard from "@/components/destinations/DestinationCard";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function DestinationsPage() {
   const [activeRegion, setActiveRegion] = useState("all");
@@ -18,63 +20,60 @@ export default function DestinationsPage() {
   }, [activeRegion, activeStatus]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Header */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-700 text-white">
-        {/* Decorative blobs */}
+    <div className="flex flex-col min-h-screen bg-gray-50">
+      <Navbar />
+
+      {/* ── Page Header ── */}
+      <header className="relative overflow-hidden bg-gradient-to-br from-emerald-900 via-teal-800 to-emerald-800 text-white pt-32 pb-14">
+        {/* Blobs */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-          <div className="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-emerald-600/30 blur-3xl" />
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-teal-500/20 blur-3xl" />
-          <div className="absolute bottom-0 left-1/2 w-64 h-64 rounded-full bg-sky-500/20 blur-3xl" />
+          <div className="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-emerald-600/20 blur-3xl" />
+          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-teal-500/15 blur-3xl" />
+          <div className="absolute bottom-0 left-1/2 w-64 h-64 rounded-full bg-sky-500/15 blur-3xl" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <nav className="mb-6 flex items-center gap-2 text-sm text-emerald-200/80" aria-label="Breadcrumb">
+          <nav className="mb-5 flex items-center gap-2 text-sm text-emerald-200/70" aria-label="Breadcrumb">
             <a href="/" className="hover:text-white transition-colors">Home</a>
-            <svg className="w-3.5 h-3.5 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <svg className="w-3.5 h-3.5 text-emerald-400/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
-            <span className="text-white font-medium">Destination Explorer</span>
+            <span className="text-white font-medium">Explore All Destinations</span>
           </nav>
 
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-xs font-medium text-emerald-100 mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs font-medium text-emerald-200 mb-4">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                Live Status Updates
+                Live Status Updates Enabled
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
-                Destination
+                Explore All
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-300">
-                  Explorer
+                  Destinations
                 </span>
               </h1>
-              <p className="mt-4 max-w-xl text-emerald-100/80 text-base sm:text-lg leading-relaxed">
-                Discover trails, waterfalls, hilltops, and beaches across the
+              <p className="mt-4 max-w-xl text-emerald-100/75 text-base leading-relaxed">
+                Trails, waterfalls, hilltops, eco-parks & beaches across the
                 <span className="text-emerald-300 font-semibold"> Sitakunda</span> &{" "}
-                <span className="text-sky-300 font-semibold">Mirsarai</span> belt of Chattogram, Bangladesh — with real-time safety conditions.
+                <span className="text-sky-300 font-semibold">Mirsarai</span> corridor — with real-time safety conditions.
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="flex items-center gap-6">
+            {/* Quick stats */}
+            <div className="flex items-center gap-8 shrink-0">
               {[
-                { label: "Destinations", value: mockDestinations.length },
+                { label: "Total Places", value: mockDestinations.length },
+                { label: "Safe to Visit", value: mockDestinations.filter((d) => d.status === "good").length },
                 {
-                  label: "Safe to Visit",
-                  value: mockDestinations.filter((d) => d.status === "good").length,
+                  label: "Community Reviews",
+                  value: mockDestinations.reduce((a, d) => a + d.reviewCount, 0).toLocaleString(),
                 },
-                {
-                  label: "Total Reviews",
-                  value: mockDestinations
-                    .reduce((acc, d) => acc + d.reviewCount, 0)
-                    .toLocaleString(),
-                },
-              ].map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <p className="text-2xl sm:text-3xl font-extrabold text-white">{stat.value}</p>
-                  <p className="text-xs text-emerald-200/70 mt-0.5">{stat.label}</p>
+              ].map((s) => (
+                <div key={s.label} className="text-center">
+                  <p className="text-3xl font-extrabold text-white">{s.value}</p>
+                  <p className="text-xs text-emerald-200/60 mt-0.5 whitespace-nowrap">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -82,7 +81,7 @@ export default function DestinationsPage() {
         </div>
       </header>
 
-      {/* Sticky Filter Bar */}
+      {/* ── Sticky Filter Bar ── */}
       <FilterControls
         activeRegion={activeRegion}
         setActiveRegion={setActiveRegion}
@@ -92,24 +91,19 @@ export default function DestinationsPage() {
         filtered={filtered.length}
       />
 
-      {/* Main Grid */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      {/* ── Destination Grid ── */}
+      <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10">
         {filtered.length === 0 ? (
-          /* Empty state */
           <div className="flex flex-col items-center justify-center py-28 text-center">
             <span className="text-6xl mb-4" aria-hidden="true">🗺️</span>
-            <h3 className="text-xl font-bold text-gray-700 mb-2">
-              No destinations match your filters
-            </h3>
+            <h3 className="text-xl font-bold text-gray-700 mb-2">No destinations match your filters</h3>
             <p className="text-gray-400 text-sm max-w-xs">
               Try selecting a different region or status to explore more places.
             </p>
             <button
-              onClick={() => {
-                setActiveRegion("all");
-                setActiveStatus("all");
-              }}
-              className="mt-6 px-5 py-2 rounded-full bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              id="reset-filters-btn"
+              onClick={() => { setActiveRegion("all"); setActiveStatus("all"); }}
+              className="mt-6 px-6 py-2.5 rounded-full bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700 active:scale-95 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
             >
               Reset Filters
             </button>
@@ -123,13 +117,7 @@ export default function DestinationsPage() {
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-100 mt-10 py-8 text-center">
-        <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()}{" "}
-          <span className="font-semibold text-emerald-600">Chattogram Trails</span> — Community-powered travel intelligence for the Sitakunda–Mirsarai corridor.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
