@@ -3,134 +3,141 @@
     "id": "khoiyachara-waterfall",
     "name": "Khoiyachara Waterfall",
     "region": "mirsarai",
-    "tagline": "A cascading 9-tier waterfall hidden deep in the Mirsarai hills.",
+    "tagline": "A cascading 11-tier waterfall deep in the Mirsarai hills.",
     "imageGradient": "from-cyan-500 via-teal-400 to-emerald-600",
     "hoverGradients": [
       "from-cyan-400 via-teal-500 to-emerald-500",
       "from-teal-500 via-emerald-400 to-cyan-500"
     ],
     "status": "good",
-    "statusNote": "Trails are clear. Crowd levels normal. Great weather.",
+    "statusNote": "Trails open. Local guides mandatory for full 11-tier trek.",
     "rating": 4.8,
-    "reviewCount": 312,
-    "tags": ["Waterfall", "Nature"],
-    "activities": ["🥾 Trekking", "🧗 Hill Climbing", "🖼️ Photo Spot"],
-    "difficulty": "Moderate",
+    "reviewCount": 1842,
+    "tags": ["Waterfall", "Adventure Trekking"],
+    "activities": ["🥾 Extreme Trekking", "🧗 Hill Climbing", "🖼️ Photo Spot"],
+    "difficulty": "Hard",
     "accommodations": [
       {
         "id": "acc-k1",
         "name": "Mirsarai Eco Resort",
         "type": "Eco Resort",
-        "distance": "2.1 km away",
+        "distance": "2.5 km away",
         "priceRange": "৳2,500 – ৳4,500/night"
+      },
+      {
+        "id": "acc-k2",
+        "name": "Khoiyachara Local Home Stay",
+        "type": "Home Stay",
+        "distance": "0.5 km away",
+        "priceRange": "৳500 – ৳1,200/night"
       }
     ]
   },
   {
     "id": "chandranath-hill",
-    "name": "Chandranath Hill",
+    "name": "Chandranath Hill & Temple",
     "region": "sitakunda",
-    "tagline": "Sacred hilltop temple with panoramic views of the Bay of Bengal.",
+    "tagline": "Sacred hilltop Hindu shrine with breathtaking ocean horizons.",
     "imageGradient": "from-emerald-600 via-green-500 to-lime-400",
     "hoverGradients": [
       "from-green-500 via-lime-400 to-emerald-500",
       "from-lime-500 via-emerald-500 to-green-600"
     ],
     "status": "caution",
-    "statusNote": "Heavy rain forecast. Trails may be slippery. High crowd on weekends.",
-    "rating": 4.6,
-    "reviewCount": 547,
-    "tags": ["Temple", "Panoramic View"],
-    "activities": ["🥾 Extreme Trekking", "🧗 Hill Climbing", "🖼️ Photo Spot"],
+    "statusNote": "Steep stairs slick after rain. High crowd during Shivratri.",
+    "rating": 4.7,
+    "reviewCount": 3240,
+    "tags": ["Temple", "Pilgrimage", "Peak View"],
+    "activities": ["🥾 Steep Trekking", "🧗 Stair Climbing", "🕉️ Pilgrimage"],
     "difficulty": "Hard",
     "accommodations": [
       {
         "id": "acc-c1",
-        "name": "Sitakunda Traveller's Inn",
+        "name": "Sitakunda Resident Hotel",
         "type": "Hotel",
-        "distance": "1.2 km away",
-        "priceRange": "৳1,500 – ৳3,000/night"
+        "distance": "1.5 km away",
+        "priceRange": "৳1,200 – ৳2,500/night"
       }
     ]
   },
   {
     "id": "mohamaya-lake",
-    "name": "Mohamaya Lake",
+    "name": "Mohamaya Irrigation Lake",
     "region": "mirsarai",
-    "tagline": "Vast serene lake surrounded by lush green mountains.",
+    "tagline": "The second largest artificial lake in Bangladesh.",
     "imageGradient": "from-sky-500 via-blue-400 to-indigo-500",
     "hoverGradients": [
       "from-blue-400 via-indigo-500 to-sky-400",
       "from-indigo-400 via-sky-500 to-blue-500"
     ],
     "status": "good",
-    "statusNote": "Perfect weather for kayaking and camping.",
-    "rating": 4.9,
-    "reviewCount": 842,
-    "tags": ["Lake", "Family Friendly"],
-    "activities": ["🚣 Kayaking", "🏕️ Camping", "🖼️ Photo Spot"],
+    "statusNote": "Kayaking fully operational. Clear evening sky for campers.",
+    "rating": 4.6,
+    "reviewCount": 2415,
+    "tags": ["Lake", "Kayaking", "Camping"],
+    "activities": ["🚣 Kayaking", "🏕️ Camping", "🚤 Speedboat Cruise"],
     "difficulty": "Easy",
     "accommodations": [
       {
         "id": "acc-m1",
-        "name": "Lakeview Campsite",
+        "name": "Mohamaya Adventure Camp",
         "type": "Camping Site",
         "distance": "0.1 km away",
-        "priceRange": "৳500 – ৳1,500/night"
+        "priceRange": "৳800 – ৳1,500/night"
       }
     ]
   },
   {
     "id": "napittachora-waterfall",
-    "name": "Napittachora Waterfall",
+    "name": "Napittachora Trail",
     "region": "mirsarai",
-    "tagline": "Hidden cascading beauty featuring three magnificent drops.",
+    "tagline": "A pristine trail connecting Kupikatakum, Bandarkum, and Bagbiyani drops.",
     "imageGradient": "from-lime-500 via-green-400 to-teal-500",
     "hoverGradients": [
       "from-green-400 via-teal-500 to-lime-400",
       "from-teal-400 via-lime-500 to-green-500"
     ],
-    "status": "avoid",
-    "statusNote": "Flash flood risks. Trail is completely washed out.",
-    "rating": 4.7,
-    "reviewCount": 201,
-    "tags": ["Waterfall", "Hidden Gem"],
-    "activities": ["🥾 Extreme Trekking", "🧗 Hill Climbing"],
-    "difficulty": "Hard",
+    "status": "caution",
+    "statusNote": "Flash flood hazards in monsoons. Walking through streams required.",
+    "rating": 4.8,
+    "reviewCount": 912,
+    "tags": ["Waterfall", "Stream Trekking"],
+    "activities": ["🥾 Water Trekking", "🧗 Canyon Hiking"],
+    "difficulty": "Moderate",
     "accommodations": [
       {
         "id": "acc-n1",
-        "name": "Hillside Rest House",
+        "name": "Nayatila Rest House",
         "type": "Rest House",
-        "distance": "4.5 km away",
-        "priceRange": "৳1,000 – ৳2,000/night"
+        "distance": "3.8 km away",
+        "priceRange": "৳1,000 – ৳1,800/night"
       }
     ]
   },
   {
-    "id": "sitakunda-botanical-garden",
-    "name": "Sitakunda Botanical Garden",
+    "id": "sitakunda-eco-park",
+    "name": "Sitakunda Eco Park & Botanical Garden",
     "region": "sitakunda",
-    "tagline": "A rich botanical reserve with rare orchids and medicinal plants.",
+    "tagline": "Home to Suptadhara and Sahasradhara waterfalls with rare flora.",
     "imageGradient": "from-emerald-400 via-teal-300 to-cyan-500",
     "hoverGradients": [
       "from-teal-300 via-cyan-500 to-emerald-400",
       "from-cyan-400 via-emerald-500 to-teal-400"
     ],
     "status": "good",
-    "statusNote": "Gardens fully open. Spring bloom season — ideal time to visit.",
-    "rating": 4.2,
-    "reviewCount": 134,
-    "tags": ["Botanical", "Educational"],
-    "activities": ["🚶 Nature Walk", "🖼️ Photo Spot"],
-    "difficulty": "Easy",
+    "statusNote": "Suptadhara trail steps repaired. Entry fee ৳50 per person.",
+    "rating": 4.3,
+    "reviewCount": 1540,
+    "tags": ["Eco Park", "Botanical", "Waterfalls"],
+    "activities": ["🚶 Nature Walk", "🖼️ Photo Spot", "🥾 Stair Trekking"],
+    "difficulty": "Moderate",
     "accommodations": [
       {
         "id": "acc-b1",
-        "name": "Green Canopy Lodge",
+        "name": "Green Valley Lodge",
         "type": "Lodge",
-        "distance": "0.8 km away",
-        "priceRange": "৳2,000 – ৳3,500/night"
+        "distance": "2.0 km away",
+        "priceRange": "৳1,500 – ৳3,000/night"
       }
     ]
   },
@@ -138,189 +145,246 @@
     "id": "guliakhali-sea-beach",
     "name": "Guliakhali Sea Beach",
     "region": "sitakunda",
-    "tagline": "A tranquil mangrove-fringed beach with crystal tidal pools.",
+    "tagline": "Unique green grass carpet meeting the swamp forest and sea.",
     "imageGradient": "from-sky-400 via-cyan-300 to-teal-400",
     "hoverGradients": [
       "from-cyan-300 via-teal-400 to-sky-400",
       "from-teal-300 via-sky-400 to-cyan-500"
     ],
     "status": "caution",
-    "statusNote": "Jellyfish alert active. Tidal currents stronger than usual this week.",
-    "rating": 4.7,
-    "reviewCount": 423,
-    "tags": ["Beach", "Mangrove", "Tidal Pools"],
-    "activities": ["🏕️ Camping", "🖼️ Photo Spot", "🚶 Nature Walk"],
+    "statusNote": "Check high tide timings before crossing the muddy channels.",
+    "rating": 4.5,
+    "reviewCount": 2150,
+    "tags": ["Beach", "Mangrove", "Green Carpet"],
+    "activities": ["🏕️ Camping", "🖼️ Photo Spot", "⛵ Local Boat Rides"],
     "difficulty": "Easy",
     "accommodations": []
   },
   {
-    "id": "kumira-ghat",
+    "id": "kumira-sandwip-ghat",
     "name": "Kumira Sandwip Ghat",
     "region": "sitakunda",
-    "tagline": "A bustling ferry ghat offering stunning sunset views over the Bay of Bengal.",
+    "tagline": "A long concrete pier stretching straight into the ocean horizon.",
     "imageGradient": "from-orange-500 via-red-400 to-pink-500",
     "hoverGradients": [
       "from-orange-400 via-red-500 to-pink-400",
       "from-pink-500 via-orange-400 to-red-500"
     ],
     "status": "good",
-    "statusNote": "Perfect spot for evening photography.",
-    "rating": 4.5,
-    "reviewCount": 612,
-    "tags": ["Beach", "Sunset"],
-    "activities": ["🖼️ Photo Spot", "🚶 Nature Walk"],
+    "statusNote": "Bridge entry fee may apply. Speedboats operate till sunset.",
+    "rating": 4.4,
+    "reviewCount": 1105,
+    "tags": ["Pier", "Sunset", "Sea View"],
+    "activities": ["🖼️ Sunset Photography", "🚶 Pier Walking", "⛵ Speedboat Ride"],
     "difficulty": "Easy",
     "accommodations": []
   },
   {
     "id": "bhatiari-lakes",
-    "name": "Bhatiari Lakes",
+    "name": "Bhatiari Lakes & Link Road Hills",
     "region": "sitakunda",
-    "tagline": "Scenic lakes nestled among green hills, famous for serene boat rides.",
+    "tagline": "Army-controlled manicured hills, golf course, and serene lakes.",
     "imageGradient": "from-blue-600 via-cyan-500 to-teal-400",
     "hoverGradients": [
       "from-cyan-500 via-blue-500 to-teal-500",
       "from-teal-500 via-cyan-400 to-blue-600"
     ],
     "status": "good",
-    "statusNote": "Boating is fully operational.",
-    "rating": 4.8,
-    "reviewCount": 950,
-    "tags": ["Lake", "Family Friendly"],
-    "activities": ["🚣 Boating", "🖼️ Photo Spot", "🚶 Nature Walk"],
-    "difficulty": "Easy",
-    "accommodations": []
-  },
-  {
-    "id": "sitakunda-eco-park",
-    "name": "Sitakunda Eco Park",
-    "region": "sitakunda",
-    "tagline": "The first eco-park in Bangladesh, rich in biodiversity and hiking trails.",
-    "imageGradient": "from-green-600 via-emerald-500 to-teal-500",
-    "hoverGradients": [
-      "from-emerald-500 via-green-500 to-teal-400",
-      "from-teal-500 via-emerald-400 to-green-600"
-    ],
-    "status": "good",
-    "statusNote": "Ideal time for bird watching.",
-    "rating": 4.4,
-    "reviewCount": 420,
-    "tags": ["Eco Park", "Wildlife"],
-    "activities": ["🚶 Nature Walk", "🥾 Trekking", "🖼️ Photo Spot"],
+    "statusNote": "Very secure zone. Sunset View Point open to the public.",
+    "rating": 4.7,
+    "reviewCount": 3120,
+    "tags": ["Lake", "Hills", "Sunset Point"],
+    "activities": ["🚣 Boating", "🖼️ Landscape Photography", "☕ Sunset Dining"],
     "difficulty": "Easy",
     "accommodations": []
   },
   {
     "id": "boalia-waterfall",
-    "name": "Boalia Waterfall",
+    "name": "Boalia & Uttorindo Waterfall",
     "region": "mirsarai",
-    "tagline": "A secluded waterfall offering a refreshing retreat for trekkers.",
+    "tagline": "A massive frog-mouth shaped rocky canyon wall cascade.",
     "imageGradient": "from-teal-600 via-cyan-500 to-sky-500",
     "hoverGradients": [
       "from-cyan-500 via-teal-500 to-sky-400",
       "from-sky-500 via-cyan-400 to-teal-600"
     ],
     "status": "caution",
-    "statusNote": "Water flow is currently low.",
-    "rating": 4.3,
-    "reviewCount": 150,
-    "tags": ["Waterfall", "Trekking"],
-    "activities": ["🥾 Trekking", "🧗 Hill Climbing"],
+    "statusNote": "Low water stream in winter. Trails become raw mud in rainy season.",
+    "rating": 4.4,
+    "reviewCount": 384,
+    "tags": ["Canyon", "Waterfall", "Trekking"],
+    "activities": ["🥾 Gorge Trekking", "🧗 Rock Climbing"],
     "difficulty": "Moderate",
     "accommodations": []
   },
   {
     "id": "jharjhari-waterfall",
-    "name": "Jharjhari Waterfall",
+    "name": "Jharjhari Trail",
     "region": "sitakunda",
-    "tagline": "A spectacular multi-step waterfall hidden deep in the forest.",
+    "tagline": "Hidden trail leading to Jharjhari, Murti, and the unique clay wall cave.",
     "imageGradient": "from-indigo-500 via-purple-500 to-pink-500",
     "hoverGradients": [
       "from-purple-500 via-indigo-400 to-pink-400",
       "from-pink-500 via-purple-400 to-indigo-500"
     ],
-    "status": "avoid",
-    "statusNote": "Trail is dangerous due to recent landslides.",
+    "status": "caution",
+    "statusNote": "Requires 3-4 hours of walking inside the hill stream reservoir.",
     "rating": 4.7,
-    "reviewCount": 280,
-    "tags": ["Waterfall", "Extreme Trekking"],
-    "activities": ["🥾 Extreme Trekking", "🧗 Hill Climbing"],
+    "reviewCount": 492,
+    "tags": ["Stream Trail", "Hidden Cascades", "Caves"],
+    "activities": ["🥾 Stream Walking", "🧗 Boulder Hopping"],
     "difficulty": "Hard",
     "accommodations": []
   },
   {
-    "id": "sahasradhara-waterfall",
-    "name": "Sahasradhara Waterfall",
-    "region": "sitakunda",
-    "tagline": "A stunning 'Thousand Streams' waterfall located within the Eco Park.",
-    "imageGradient": "from-cyan-600 via-blue-500 to-indigo-600",
-    "hoverGradients": [
-      "from-blue-500 via-cyan-500 to-indigo-500",
-      "from-indigo-500 via-blue-400 to-cyan-600"
-    ],
-    "status": "good",
-    "statusNote": "Easily accessible from the Eco Park entrance.",
-    "rating": 4.6,
-    "reviewCount": 390,
-    "tags": ["Waterfall", "Family Friendly"],
-    "activities": ["🚶 Nature Walk", "🖼️ Photo Spot"],
-    "difficulty": "Easy",
-    "accommodations": []
-  },
-  {
-    "id": "mirsarai-hills",
-    "name": "Mirsarai Hills",
+    "id": "kamaldaha-waterfall",
+    "name": "Kamaldaha Waterfall",
     "region": "mirsarai",
-    "tagline": "Endless rolling green hills perfect for camping and star gazing.",
-    "imageGradient": "from-emerald-700 via-green-600 to-lime-500",
+    "tagline": "Features three distinct cascading steps, highly popular with backpackers.",
+    "imageGradient": "from-rose-500 via-pink-500 to-red-500",
     "hoverGradients": [
-      "from-green-600 via-emerald-600 to-lime-400",
-      "from-lime-500 via-green-500 to-emerald-700"
+      "from-pink-500 via-red-500 to-rose-500",
+      "from-red-500 via-rose-500 to-pink-500"
     ],
     "status": "good",
-    "statusNote": "Clear skies expected tonight.",
+    "statusNote": "Trail starts right near the Dhaka-Chittagong Highway.",
     "rating": 4.5,
-    "reviewCount": 210,
-    "tags": ["Hill", "Camping"],
-    "activities": ["🏕️ Camping", "🥾 Trekking", "🖼️ Photo Spot"],
+    "reviewCount": 670,
+    "tags": ["Waterfall", "Easy Access"],
+    "activities": ["🥾 Trail Trekking", "🧗 Cascading"],
     "difficulty": "Moderate",
     "accommodations": []
   },
   {
-    "id": "komoldoho-waterfall",
-    "name": "Komoldoho Waterfall",
+    "id": "harinmara-hatuvanga",
+    "name": "Harinmara Hatuvanga Waterfall",
     "region": "mirsarai",
-    "tagline": "A unique three-tiered waterfall requiring a thrilling boulder trek.",
-    "imageGradient": "from-teal-700 via-cyan-600 to-sky-500",
+    "tagline": "Secluded steep gorge trail popular for raw wilderness experiences.",
+    "imageGradient": "from-amber-600 via-yellow-500 to-lime-600",
     "hoverGradients": [
-      "from-cyan-600 via-teal-600 to-sky-400",
-      "from-sky-500 via-cyan-500 to-teal-700"
+      "from-yellow-500 via-lime-600 to-amber-500",
+      "from-lime-600 via-amber-500 to-yellow-500"
     ],
     "status": "caution",
-    "statusNote": "Boulders are extremely slippery.",
-    "rating": 4.8,
-    "reviewCount": 340,
-    "tags": ["Waterfall", "Bouldering"],
-    "activities": ["🥾 Extreme Trekking", "🧗 Bouldering"],
+    "statusNote": "Extremely deep inside forest. Guide tracking strictly recommended.",
+    "rating": 4.6,
+    "reviewCount": 198,
+    "tags": ["Deep Forest", "Gorge Waterfall"],
+    "activities": ["🥾 Wilderness Trekking", "🧗 Bushcrafting"],
     "difficulty": "Hard",
     "accommodations": []
   },
   {
-    "id": "chittagong-university-campus",
-    "name": "Chittagong University Campus",
+    "id": "banshbaria-beach",
+    "name": "Banshbaria Sea Beach",
     "region": "sitakunda",
-    "tagline": "The largest university campus in Bangladesh, featuring lakes, hills, and wildlife.",
-    "imageGradient": "from-orange-400 via-amber-500 to-yellow-400",
+    "tagline": "Known for a long pier walkway spanning far out across the coastal mudflats.",
+    "imageGradient": "from-fuchsia-600 via-pink-500 to-purple-600",
     "hoverGradients": [
-      "from-amber-500 via-orange-500 to-yellow-500",
-      "from-yellow-500 via-amber-400 to-orange-500"
+      "from-pink-500 via-purple-600 to-fuchsia-500",
+      "from-purple-600 via-fuchsia-500 to-pink-500"
     ],
     "status": "good",
-    "statusNote": "Open for visitors. Shuttle train running on schedule.",
+    "statusNote": "Pier walkway has sustained wave damage; step with extreme care.",
+    "rating": 4.3,
+    "reviewCount": 1280,
+    "tags": ["Beach", "Pier Walk", "Sunset"],
+    "activities": ["🖼️ Sunset Watching", "🚶 Coastal Walks", "⛵ Speedboating"],
+    "difficulty": "Easy",
+    "accommodations": []
+  },
+  {
+    "id": "ruposhi-waterfall",
+    "name": "Ruposhi Waterfall",
+    "region": "mirsarai",
+    "tagline": "A multi-step hidden gem starting from the Wahedpur hill tracks.",
+    "imageGradient": "from-teal-400 via-emerald-400 to-green-500",
+    "hoverGradients": [
+      "from-emerald-400 via-green-500 to-teal-400",
+      "from-green-400 via-teal-400 to-emerald-500"
+    ],
+    "status": "good",
+    "statusNote": "The first step is easily accessible for elderly travelers.",
+    "rating": 4.6,
+    "reviewCount": 743,
+    "tags": ["Waterfall", "Family Friendly", "Trekking"],
+    "activities": ["🥾 Hill Trekking", "🏊 Stream Bathing"],
+    "difficulty": "Moderate",
+    "accommodations": []
+  },
+  {
+    "id": "sonaichhari-trail",
+    "name": "Sonaichhari Trail",
+    "region": "sitakunda",
+    "tagline": "One of the most dangerous and narrow rocky canyon gorges in Bangladesh.",
+    "imageGradient": "from-red-600 via-orange-600 to-amber-700",
+    "hoverGradients": [
+      "from-orange-600 via-amber-700 to-red-600",
+      "from-amber-700 via-red-600 to-orange-600"
+    ],
+    "status": "avoid",
+    "statusNote": "High risk of getting lost or slipping from giant, smooth mossy rocks.",
     "rating": 4.9,
-    "reviewCount": 1200,
-    "tags": ["Campus", "Nature"],
-    "activities": ["🚶 Nature Walk", "🖼️ Photo Spot"],
+    "reviewCount": 512,
+    "tags": ["Canyon Gorge", "Extreme Adventure"],
+    "activities": ["🥾 Deep Canyon Trekking", "🧗 Extreme Bouldering"],
+    "difficulty": "Extreme",
+    "accommodations": []
+  },
+  {
+    "id": "choto-kamaldaha-trail",
+    "name": "Choto Kamaldaha & Deer Park Trail",
+    "region": "mirsarai",
+    "tagline": "Features unique upstream cascades like Harin Khayari and Chagolkanda.",
+    "imageGradient": "from-violet-600 via-indigo-600 to-blue-700",
+    "hoverGradients": [
+      "from-indigo-600 via-blue-700 to-violet-600",
+      "from-blue-700 via-violet-600 to-indigo-600"
+    ],
+    "status": "caution",
+    "statusNote": "Trail requires climbing using tree roots and slippery rocks.",
+    "rating": 4.7,
+    "reviewCount": 389,
+    "tags": ["Waterfall Trail", "Deep Bush"],
+    "activities": ["🥾 Root Climbing", "🧗 Stream Trekking"],
+    "difficulty": "Hard",
+    "accommodations": []
+  },
+  {
+    "id": "domkhali-sea-beach",
+    "name": "Domkhali Sea Beach",
+    "region": "mirsarai",
+    "tagline": "The ultimate endpoint of the Mirsarai marine drive with peaceful pine trees.",
+    "imageGradient": "from-emerald-500 via-teal-600 to-cyan-600",
+    "hoverGradients": [
+      "from-teal-600 via-cyan-600 to-emerald-500",
+      "from-cyan-600 via-emerald-500 to-teal-600"
+    ],
+    "status": "good",
+    "statusNote": "Excellent road connectivity. Highly isolated and non-commercial.",
+    "rating": 4.5,
+    "reviewCount": 230,
+    "tags": ["Beach", "Pine Forest", "Marine Drive"],
+    "activities": ["🚶 Coastal Cycling", "🏕️ Beach Camping", "🖼️ Sunset Views"],
+    "difficulty": "Easy",
+    "accommodations": []
+  },
+  {
+    "id": "sahasradhara-lake-dam",
+    "name": "Sahasradhara Reservoir & Dam",
+    "region": "sitakunda",
+    "tagline": "An active spillway dam with a peaceful emerald water catchment.",
+    "imageGradient": "from-blue-500 via-sky-600 to-teal-600",
+    "hoverGradients": [
+      "from-sky-600 via-teal-600 to-blue-500",
+      "from-teal-600 via-blue-500 to-sky-600"
+    ],
+    "status": "good",
+    "statusNote": "Located inside the eco-park boundary. Rowboats available for hire.",
+    "rating": 4.4,
+    "reviewCount": 680,
+    "tags": ["Dam", "Lake", "Eco Park"],
+    "activities": ["🚣 Boat Rowing", "🚶 Dam Walkway", "🖼️ Engineering Sightseeing"],
     "difficulty": "Easy",
     "accommodations": []
   }
