@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const FOOTER_LINKS = {
   Explore: [
@@ -60,9 +61,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <span className="flex items-center justify-center w-9 h-9 rounded-xl bg-emerald-600 text-white text-sm font-extrabold">
-                CT
-              </span>
+              <Image 
+                src="/logo.png" 
+                width={36} 
+                height={36} 
+                alt="logo" 
+                quality={100}
+                className="object-contain opacity-90 hover:opacity-100 transition-opacity"
+              />
               <span className="font-bold text-xl text-white">
                 Chattogram
                 <span className="text-emerald-400"> Trails</span>

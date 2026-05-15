@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -23,11 +24,10 @@ export default function Navbar() {
   return (
     <header
       id="navbar"
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -37,13 +37,18 @@ export default function Navbar() {
             id="navbar-logo"
             className="flex items-center gap-2 group"
           >
-            <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-600 text-white text-base font-extrabold shadow-sm group-hover:bg-emerald-700 transition-colors">
-              CT
-            </span>
+            <Image 
+              src="/logo.png" 
+              width={40} 
+              height={40} 
+              alt="logo" 
+              priority
+              quality={100}
+              className="object-contain"
+            />
             <span
-              className={`font-bold text-lg tracking-tight transition-colors ${
-                scrolled ? "text-gray-900" : "text-white"
-              }`}
+              className={`font-bold text-lg tracking-tight transition-colors ${scrolled ? "text-gray-900" : "text-white"
+                }`}
             >
               Chattogram
               <span className="text-emerald-400 font-extrabold"> Trails</span>
@@ -57,11 +62,10 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 id={`nav-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  scrolled
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${scrolled
                     ? "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                     : "text-white/80 hover:text-white hover:bg-white/10"
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -83,9 +87,8 @@ export default function Navbar() {
           <button
             id="navbar-mobile-toggle"
             onClick={() => setMobileOpen((v) => !v)}
-            className={`md:hidden p-2 rounded-lg transition-colors ${
-              scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
-            }`}
+            className={`md:hidden p-2 rounded-lg transition-colors ${scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-white/10"
+              }`}
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
           >
@@ -101,9 +104,8 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ${
-            mobileOpen ? "max-h-80 pb-4" : "max-h-0"
-          } bg-white rounded-2xl shadow-lg mt-1 border border-gray-100`}
+          className={`md:hidden overflow-hidden transition-all duration-300 ${mobileOpen ? "max-h-80 pb-4" : "max-h-0"
+            } bg-white rounded-2xl shadow-lg mt-1 border border-gray-100`}
         >
           <nav className="flex flex-col gap-1 p-3">
             {NAV_LINKS.map((link) => (

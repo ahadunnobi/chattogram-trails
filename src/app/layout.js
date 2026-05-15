@@ -4,6 +4,9 @@ export const metadata = {
   title: "Chattogram Trails — Explore Sitakunda & Mirsarai",
   description:
     "Discover real-time travel conditions, trails, waterfalls, hilltops, and eco-parks across the Sitakunda–Mirsarai corridor of Chattogram, Bangladesh.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
