@@ -10,11 +10,43 @@ export default function AddDestinationPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsPending(true);
-    // Simulate API call
-    setTimeout(() => {
+    
+    const formData = new FormData(e.target);
+    const destinationData = {
+      name: formData.get("destinationName"),
+      region: formData.get("region"),
+      tags: [formData.get("category")],
+      cost: formData.get("price"),
+      duration: formData.get("duration"),
+      bestTime: formData.get("departureDate"),
+      image: formData.get("imageUrl"),
+      tagline: formData.get("description"),
+      status: "good",
+      rating: 0,
+      reviewCount: 0,
+      activities: [],
+      difficulty: "Moderate",
+      accommodations: []
+    };
+
+    fetch('http://localhost:6969/destinations', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(destinationData)
+    })
+    .then(res => res.json())
+    .then(data => {
       setIsPending(false);
       alert("Destination added successfully!");
-    }, 2000);
+      e.target.reset();
+    })
+    .catch(err => {
+      console.error(err);
+      setIsPending(false);
+      alert("Failed to add destination.");
+    });
   };
 
   return (
