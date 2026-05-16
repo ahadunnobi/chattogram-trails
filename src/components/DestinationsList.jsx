@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function DestinationsList() {
   const [destinations, setDestinations] = useState([]);
@@ -94,7 +95,7 @@ export default function DestinationsList() {
                   </svg>
                   <span className="text-sm font-bold">{dest.rating || "New"}</span>
                 </div>
-                <button className="btn btn-sm btn-info text-white">View Details</button>
+                <Link href={`/destination/${dest.id}`} className="btn btn-sm btn-info text-white">View Details</Link>
               </div>
             </div>
           </div>

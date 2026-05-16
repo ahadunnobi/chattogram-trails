@@ -70,6 +70,15 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/admin"
+              className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors ${scrolled
+                  ? "text-emerald-600 hover:bg-emerald-50"
+                  : "text-emerald-300 hover:bg-white/10"
+                }`}
+            >
+              Admin Mode
+            </Link>
           </nav>
 
           {/* CTA */}
