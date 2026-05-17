@@ -9,7 +9,7 @@ export default function DestinationsList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:6969/destinations')
+    fetch('http://localhost:5000/destinations')
       .then(res => {
         if (!res.ok) throw new Error("Failed to fetch");
         return res.json();
@@ -20,7 +20,7 @@ export default function DestinationsList() {
       })
       .catch(err => {
         console.error(err);
-        setError("Failed to load destinations. Make sure the server is running on port 6969.");
+        setError("Failed to load destinations. Make sure the server is running on port 5000.");
         setIsLoading(false);
       });
   }, []);
@@ -46,11 +46,7 @@ export default function DestinationsList() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Explore Destinations</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">Discover the most beautiful places across Sitakunda and Mirsarai. From hidden waterfalls to breathtaking mountain peaks.</p>
-      </div>
+    <div className="max-w-7xl mx-auto px-4 py-8">
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {destinations.map(dest => (

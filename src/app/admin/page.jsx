@@ -31,7 +31,7 @@ export default function AdminDashboard() {
   // 1. Fetch All Destinations
   const fetchDestinations = () => {
     setIsLoading(true);
-    fetch("http://localhost:6969/destinations")
+    fetch("http://localhost:5000/destinations")
       .then((res) => res.json())
       .then((data) => {
         setDestinations(data);
@@ -68,7 +68,7 @@ export default function AdminDashboard() {
       setSelectedDest(dest);
     } else if (mode === "view" && dest) {
       // 2. Fetch Single Destination
-      fetch(`http://localhost:6969/destinations/${dest._id || dest.id}`)
+      fetch(`http://localhost:5000/destinations/${dest._id || dest.id}`)
         .then((res) => res.json())
         .then((data) => {
           setSelectedDest(data);
@@ -103,8 +103,8 @@ export default function AdminDashboard() {
 
     const isEdit = modalMode === "edit";
     const url = isEdit
-      ? `http://localhost:6969/destinations/${selectedDest._id || selectedDest.id}`
-      : "http://localhost:6969/destinations";
+      ? `http://localhost:5000/destinations/${selectedDest._id || selectedDest.id}`
+      : "http://localhost:5000/destinations";
       
     const method = isEdit ? "PUT" : "POST";
 
@@ -125,7 +125,7 @@ export default function AdminDashboard() {
   // 5. Remove Destination
   const handleDelete = (id) => {
     if (confirm("Are you sure you want to delete this destination? This action cannot be undone.")) {
-      fetch(`http://localhost:6969/destinations/${id}`, { method: "DELETE" })
+      fetch(`http://localhost:5000/destinations/${id}`, { method: "DELETE" })
         .then((res) => res.json())
         .then(() => {
           setDestinations(destinations.filter((d) => (d._id || d.id) !== id));

@@ -29,7 +29,7 @@ export default function AddDestinationPage() {
       accommodations: []
     };
 
-    fetch('http://localhost:6969/destinations', {
+    fetch('http://localhost:5000/destinations', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
